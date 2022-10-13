@@ -1,25 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+// import react, { useState } from "react";
 
-function App() {
+// function App() {
+//   const list = ["Amit", "Achal", "Rahul", "Mohit", "Neeraj", "Dhanraj", "Smit"];
+
+//   const [filteredList, setFilteredList] = useState(list);
+
+//   const handleSearch = (event) => {
+//     if (event.target.value == "") {
+//       setFilteredList(list);
+//       return list;
+//     }
+
+//     const filteredValues = list.filter(
+//       (item) =>
+//         item.toLowerCase().indexOf(event.target.value.toLowerCase()) !== -1
+//     );
+//     setFilteredList(filteredValues);
+//   };
+
+//   return (
+//     <div>
+//       <div>
+//         Search:
+//         <input name="query" type="text" onChange={handleSearch} />
+//       </div>
+//       <div>
+//         {filteredList &&
+//           filteredList.map((item, index) => <div key={index}>{item}</div>)}
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default App;
+import Home from "./Home";
+
+function App(){
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="content">
+        <Home/>
+      </div>
     </div>
-  );
+  )
 }
 
 export default App;
